@@ -1,0 +1,20 @@
+.main{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.interaktion{
+}
+
+.interaktion span {
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border-radius: 100%;
+}

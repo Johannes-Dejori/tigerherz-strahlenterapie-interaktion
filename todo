@@ -1,0 +1,30 @@
+  //JS
+  class Cell {
+    height = 100;
+    width = 100;
+    posX:number;
+    posY:number;
+
+    public constructor(height:number, width:number){
+      this.height = height;
+      this.width = width;
+      this.posX = this.getRandomInt(600); 
+      this.posY = this.getRandomInt(600);
+    }
+
+    public createCell(){
+      if (typeof window !== "undefined") {
+        const span = document.createElement("span");
+        const interaktion = document.getElementById("interaktion");
+        interaktion?.appendChild(span);
+        console.log("Passt")
+      }
+    }
+
+    private getRandomInt(max:number) {
+      return Math.floor(Math.random() * max);
+    }
+  }
+
+  const cellOne = new Cell(100, 100);
+  cellOne.createCell();
